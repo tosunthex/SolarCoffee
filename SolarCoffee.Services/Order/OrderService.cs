@@ -34,7 +34,7 @@ namespace SolarCoffee.Services.Order
                 .ToList();
         }
 
-        public ServiceResponse<bool> GenerateInvoiceForOrder(SalesOrder order)
+        public ServiceResponse<bool> GenerateOpenOrder(SalesOrder order)
         {
             var now = DateTime.UtcNow;
             foreach (var item in order.SalesOrderItems)
